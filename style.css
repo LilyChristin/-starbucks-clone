@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;600;700&display=swap');
+
+:root {
+    --colorWhite: #fff;
+    --colorBlack: #000;
+    --colorGreenStarbucks: #006241;
+    --colorGreenAccent: #00754a;
+    --colorRed: #d62b1f;
+    --colorGreenLight: #d4e9e2;
+    --navbarBoxShadow: 0 1px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Khand', sans-serif;
+    line-height: 1.5;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+    font-size: 14px;
+}
+
+a {
+    color: var(--colorBlack);
+}
+
+ul {
+    list-style: none;
+}
+
+/* buttons */
+.btn {
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px var(--colorBlack) solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-dark-outline {
+    border-color: var(--colorBlack);
+    color: var(--colorBlack);
+}
+
+.btn-dark-outline:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.btn-dark {
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/*Navbar*/
+.navbar {
+    width: 100%;
+    height: auto;
+    padding: 1.9rem 0;
+    background-color: var(--colorWhite);
+    box-shadow: var(--navbarBoxShadow);
+}
+
+.navbar-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 51px;
+    height: 51px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: var(--colorBlack);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: var(--colorGreenStarbucks);
+}
+
+.navbar-nav-left {
+    flex: 1;
+    margin-left: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.navbar-nav-right {
+}
+
+.navbar-nav-right li:first-child a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav-right li:first-child a svg{
+    margin-right: .5rem;
+}
+/*Navbar end*/
